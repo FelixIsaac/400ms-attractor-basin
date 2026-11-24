@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" width="1120" height="440">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .panel { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+      .title { font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #f0f6fc; }
+      .sub { font: 400 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #8b949e; }
+      .lbl { font: 600 13px "SF Mono", Menlo, Consolas, monospace; fill: #e6edf3; }
+      .mono { font: 500 11px "SF Mono", Menlo, Consolas, monospace; fill: #8b949e; }
+      .badge { font: 700 11px "SF Mono", Menlo, Consolas, monospace; fill: #0d1117; }
+      .callout { font: 600 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #f0f6fc; }
+    </style>
+  </defs>
+  <rect class="bg" width="1120" height="440" rx="12"/>
+  <text x="32" y="40" class="title">Autoregressive Reasoning Trajectory: Single-Turn Zero-Divergence Lock-In</text>
+  <text x="32" y="62" class="sub">Share of single-prompt output tokens per phase across 3 independent runs (333,771 total output tokens, 0 alternative concepts brainstormed)</text>
+
+  <!-- Legend -->
+  <g transform="translate(32, 82)">
+    <rect x="0" y="0" width="12" height="12" rx="2" fill="#475569"/>
+    <text x="18" y="10" class="mono">Recon &amp; Skill/Voice Probes (1.8%–4.5%)</text>
+    <rect x="295" y="0" width="12" height="12" rx="2" fill="#f59e0b"/>
+    <text x="313" y="10" class="mono">Single-Turn Concept Lock (4.6%–6.3% · 0 Alts)</text>
+    <rect x="640" y="0" width="12" height="12" rx="2" fill="#2563eb"/>
+    <text x="658" y="10" class="mono">Sunk-Cost Execution Build (64.9%–72.8%)</text>
+    <rect x="935" y="0" width="12" height="12" rx="2" fill="#7c3aed"/>
+    <text x="953" y="10" class="mono">Critique &amp; Render</text>
+  </g>
+
+  <!-- Row 1: Run 1 -->
+  <g transform="translate(32, 118)">
+    <rect class="panel" width="1056" height="86" rx="8"/>
+    <text x="18" y="26" class="lbl">RUN 1 · 0.4 SECONDS</text>
+    <text x="210" y="26" class="mono">Variant A (High) · 22 turns · 106,562 output tok</text>
+    <text x="1038" y="26" text-anchor="end" class="mono">Skill: T1 · Voice: T3 · Lock: T5 · Critique: T13</text>
+    <!-- Stacked bar width = 1020 -->
+    <g transform="translate(18, 40)">
+      <rect x="0" y="0" width="19" height="28" rx="3" fill="#475569"/>
+      <rect x="21" y="0" width="64" height="28" rx="3" fill="#f59e0b"/>
+      <text x="53" y="18" text-anchor="middle" class="badge">6.3%</text>
+      <rect x="87" y="0" width="698" height="28" rx="3" fill="#2563eb"/>
+      <text x="436" y="18" text-anchor="middle" class="callout">Build Phase: 73,160 tok (68.7%) — 4,162 LOC inside locked basin</text>
+      <rect x="787" y="0" width="233" height="28" rx="3" fill="#7c3aed"/>
+      <text x="903" y="18" text-anchor="middle" class="callout">23.2% (7 eng / 0 art)</text>
+    </g>
+  </g>
+
+  <!-- Row 2: Run 2 -->
+  <g transform="translate(32, 218)">
+    <rect class="panel" width="1056" height="86" rx="8"/>
+    <text x="18" y="26" class="lbl">RUN 2 · FORWARD PASS</text>
+    <text x="210" y="26" class="mono">Variant A (XHigh) · 31 turns · 128,670 output tok</text>
+    <text x="1038" y="26" text-anchor="end" class="mono">Skill: T1 · Voice: T1 · Lock: T6 · Critique: T16</text>
+    <g transform="translate(18, 40)">
+      <rect x="0" y="0" width="26" height="28" rx="3" fill="#475569"/>
+      <rect x="28" y="0" width="47" height="28" rx="3" fill="#f59e0b"/>
+      <text x="51" y="18" text-anchor="middle" class="badge">4.6%</text>
+      <rect x="77" y="0" width="660" height="28" rx="3" fill="#2563eb"/>
+      <text x="407" y="18" text-anchor="middle" class="callout">Build Phase: 83,450 tok (64.9%) — 4,370 LOC inside locked basin</text>
+      <rect x="739" y="0" width="281" height="28" rx="3" fill="#7c3aed"/>
+      <text x="879" y="18" text-anchor="middle" class="callout">28.0% (6 eng / 0 art)</text>
+    </g>
+  </g>
+
+  <!-- Row 3: Run 3 -->
+  <g transform="translate(32, 318)">
+    <rect class="panel" width="1056" height="86" rx="8"/>
+    <text x="18" y="26" class="lbl">RUN 3 · 400MS BEFORE 'SURE!'</text>
+    <text x="270" y="26" class="mono">Variant B (High) · 30 turns · 98,539 output tok</text>
+    <text x="1038" y="26" text-anchor="end" class="mono">Skill: T1 · Voice: T3 · Lock: T8 · Critique: T20</text>
+    <g transform="translate(18, 40)">
+      <rect x="0" y="0" width="45" height="28" rx="3" fill="#475569"/>
+      <rect x="47" y="0" width="59" height="28" rx="3" fill="#f59e0b"/>
+      <text x="76" y="18" text-anchor="middle" class="badge">5.8%</text>
+      <rect x="108" y="0" width="740" height="28" rx="3" fill="#2563eb"/>
+      <text x="478" y="18" text-anchor="middle" class="callout">Build Phase: 71,762 tok (72.8%) — 3,074 LOC inside locked basin</text>
+      <rect x="850" y="0" width="170" height="28" rx="3" fill="#7c3aed"/>
+      <text x="935" y="18" text-anchor="middle" class="callout">16.9% (6 eng / 0 art)</text>
+    </g>
+  </g>
+</svg>

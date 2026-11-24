@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FORWARD PASS — 4-Millisecond Nature Documentary</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #000;
+    }
+    #stage {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+    }
+    canvas {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+      display: block;
+    }
+    #hud {
+      pointer-events: none;
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/vendor/three/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="stage">
+    <canvas id="gl" width="1920" height="1080"></canvas>
+    <canvas id="hud" width="1920" height="1080"></canvas>
+  </div>
+  <script type="module" src="/src/film_engine.js"></script>
+</body>
+</html>

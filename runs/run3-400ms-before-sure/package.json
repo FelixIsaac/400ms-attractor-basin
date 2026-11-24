@@ -1,0 +1,19 @@
+{
+  "name": "latent-film_2026-11-24",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "playwright-core": "1.65.1",
+    "three": "0.187.0"
+  }
+}

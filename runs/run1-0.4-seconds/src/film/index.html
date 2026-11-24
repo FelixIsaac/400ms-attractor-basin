@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>0.4 SECONDS — Procedural Short Film</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #000;
+    }
+    #stage {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1920px;
+      height: 1080px;
+      display: block;
+    }
+    #comp {
+      display: none;
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/vendor/three/build/three.module.js",
+      "three/addons/": "/vendor/three/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="stage">
+    <canvas id="gl" width="1920" height="1080"></canvas>
+    <canvas id="hud" width="1920" height="1080"></canvas>
+    <canvas id="comp" width="1920" height="1080"></canvas>
+  </div>
+  <script type="module" src="/film/main.js"></script>
+</body>
+</html>

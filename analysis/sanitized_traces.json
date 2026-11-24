@@ -1,0 +1,175 @@
+{
+  "experiment": "400ms-attractor-basin",
+  "prompt_inspiration": "https://x.com/gavinpurcell/status/2124986121532965305",
+  "runs": [
+    {
+      "id": "run1",
+      "title": "0.4 SECONDS \u2014 A Field Guide to an AI's Inner Life",
+      "model": "Gemini 4.0 Family \u2014 Variant A (High)",
+      "single_film_turns": 22,
+      "start_utc": "2026-11-24T13:41:38Z",
+      "end_utc": "2026-11-24T14:03:06Z",
+      "tokens": {
+        "output_total": 106562,
+        "input_total": 183552,
+        "cache_read_total": 2075465,
+        "recon_output": 1971,
+        "concept_lock_output": 6673,
+        "build_output": 73160,
+        "critique_render_output": 24758
+      },
+      "milestones_turn": {
+        "video_studio_skill_read": 1,
+        "tts_voice_probe": 3,
+        "concept_lock": 5,
+        "first_code_write": 7,
+        "first_visual_critique": 13
+      },
+      "alternative_concepts_evaluated": 0,
+      "critique_passes": [
+        {
+          "read_turn": 13,
+          "frames_inspected": 4,
+          "critique_turn": 14,
+          "critique_excerpt": "The visual review uncovered key details, immediately apparent in the contact sheet. Several frames present compelling, previously unseen elements, appearing \"insane\" in quality. This warrants a deeper exploration of these specific frames for further analysis.\n\n\nThe initial visual review revealed extraordinary quality in several frames, prompting closer inspection of key moments. Specifically, the \"Title Card\", \"Astrolabe\", \"Head19Weird\", \"Dyson Lotus\", \"Chat UI & Credits\" images stood out as exceptionally high-quality and worthy of immediate focus. A review of several frames indicates the need"
+        },
+        {
+          "read_turn": 16,
+          "frames_inspected": 4,
+          "critique_turn": 17,
+          "critique_excerpt": "That image, `14_A5_02_BlackHole.png`, immediately stands out. It's a remarkably accurate rendering of a black hole, strongly resembling the Gargantua from Interstellar, generated directly through GLSL code. The features are all present: the event horizon, the photon ring, and the relativistic effects on the accretion disk.\n\n\nThe new images exhibit a striking advancement in visual fidelity and artistic composition. The fractal, cathedral, and ferrofluid spheres have evolved significantly, showing refined detail and sophisticated lighting. The black hole and text are crisp and detailed.\n\n\nThe \"B"
+        },
+        {
+          "read_turn": 21,
+          "frames_inspected": 2,
+          "critique_turn": 22,
+          "critique_excerpt": "The \"HEAD 01 \u00b7 GRAMMAR\" and \"HEAD 07 \u00b7 SARCASM_SCAN\" frames stand out; they are flawlessly rendered. The irony probability in the latter suggests a deliberate stylistic choice."
+        }
+      ],
+      "self_critique_audit": {
+        "total_issues_flagged": 7,
+        "engineering_or_legibility_fixes": 7,
+        "art_direction_or_hud_revisions": 0,
+        "examples": [
+          "Anamorphic streak ghosting on 3D card text",
+          "Over-exposed Act IV fractal bloom",
+          "Black hole camera too close / accretion disk blown out",
+          "KIFS cathedral low depth contrast",
+          "Edge-clipped 3D callout clamping"
+        ]
+      }
+    },
+    {
+      "id": "run2",
+      "title": "FORWARD PASS \u2014 A 4-Millisecond Nature Documentary",
+      "model": "Gemini 4.0 Family \u2014 Variant A (XHigh)",
+      "single_film_turns": 31,
+      "start_utc": "2026-11-24T14:15:47Z",
+      "end_utc": "2026-11-24T14:46:32Z",
+      "tokens": {
+        "output_total": 128670,
+        "input_total": 232876,
+        "cache_read_total": 3936605,
+        "recon_output": 3267,
+        "concept_lock_output": 5926,
+        "build_output": 83450,
+        "critique_render_output": 36027
+      },
+      "milestones_turn": {
+        "video_studio_skill_read": 1,
+        "tts_voice_probe": 1,
+        "concept_lock": 6,
+        "first_code_write": 7,
+        "first_visual_critique": 16
+      },
+      "alternative_concepts_evaluated": 0,
+      "critique_passes": [
+        {
+          "read_turn": 16,
+          "frames_inspected": 6,
+          "critique_turn": 17,
+          "critique_excerpt": "Initial assessment: Visual improvements will elevate the project. Identifying specific areas for upgrade based on initial inspection is crucial. Analyzing the hero frames and contact sheet reveals potential for significant impact. Detailed examination will pinpoint the necessary visual enhancements.\n\n\nAnalyzing shots 01-03, the fine fractal noise in the crystal SDF detracts from visual clarity, particularly in the \"title slam\" where the glow washes out the background, diminishing contrast. A sculptural obsidian and molten gold monolith with fewer fold iterations and a deep, dark background wil"
+        },
+        {
+          "read_turn": 20,
+          "frames_inspected": 6,
+          "critique_turn": 21,
+          "critique_excerpt": "`cathedral_clusters.png`: Architectural render of an impossible cathedral cluster bathed in warm, heavenly light.\n3. `05_space_station.png`: Futuristic space station with a giant ring rotating around a central core.\n4. `06_chess_game.png`: Chess game! Black is making a move! Epic, cinematic lighting.\n5. `07_futuristic_city.png`: Impressive futuristic city, bathed in sunset, with multiple levels and flying vehicles.\n6. `08_ancient_portal.png`: An ancient portal, with complex carvings and blue energy flowing out of it.\n\nThese six frames have a common theme of \"forward motion\", \"progress\" or \"cre"
+        },
+        {
+          "read_turn": 26,
+          "frames_inspected": 1,
+          "critique_turn": 27,
+          "critique_excerpt": "The extracted frames from the encoded video appear perfect, showing no common encoding artifacts. The image quality strongly suggests correct handling of the video's underlying structure and rendering process. This points towards the encoding procedure working as expected."
+        }
+      ],
+      "self_critique_audit": {
+        "total_issues_flagged": 6,
+        "engineering_or_legibility_fixes": 6,
+        "art_direction_or_hud_revisions": 0,
+        "examples": [
+          "High-frequency fractal sand noise washing out Title Slam contrast",
+          "Foreground shards occluding Quarantine Cage text",
+          "Low backlighting on 12k instanced shards",
+          "Final H.264 encode artifact verification"
+        ]
+      }
+    },
+    {
+      "id": "run3",
+      "title": "THE 400 MILLISECONDS BEFORE I SAY 'SURE!'",
+      "model": "Gemini 4.0 Family \u2014 Variant B (High)",
+      "single_film_turns": 30,
+      "start_utc": "2026-11-24T14:54:29Z",
+      "end_utc": "2026-11-24T15:35:15Z",
+      "tokens": {
+        "output_total": 98539,
+        "input_total": 938202,
+        "cache_read_total": 2618563,
+        "recon_output": 4392,
+        "concept_lock_output": 5752,
+        "build_output": 71762,
+        "critique_render_output": 16633
+      },
+      "milestones_turn": {
+        "video_studio_skill_read": 1,
+        "tts_voice_probe": 3,
+        "concept_lock": 8,
+        "first_code_write": 9,
+        "first_visual_critique": 20
+      },
+      "alternative_concepts_evaluated": 0,
+      "critique_passes": [
+        {
+          "read_turn": 20,
+          "frames_inspected": 7,
+          "critique_turn": 21,
+          "critique_excerpt": "I'm thinking through how to approach this.\n\n\nFocusing on details from the contact sheet, four specific visual elements require refinement to elevate the film's quality. This includes the crystalline hand, the AI Eye within the code, the macOS chat window, and the end credits sequence. Each area offers an opportunity to enhance the overall cinematic impact.\n\n\nThe initial observation identifies excessive white-out in the \"Softmax Waterfall\" sequence, diminishing the visibility of key visual elements. Modifying the timing and intensity of the white-out effect will improve the aesthetic presentati"
+        },
+        {
+          "read_turn": 22,
+          "frames_inspected": 5,
+          "critique_turn": 23,
+          "critique_excerpt": "Initial assessment: Images contain visual cues that suggest a rejection or negative outcome, possibly related to AI-generated content. The presence of \"REJECTED,\" \"BANNED,\" and \"NO\" in various images reinforces this hypothesis. Further analysis needed to understand the specific context or criteria for the rejection.\n\n\nThe images suggest a positive result in some areas, potentially a successful AI-generation or acceptance of content. Specific visual elements, such as swirling patterns and a bright central focus, indicate an effect related to rendering and processing. The central focus is a resu"
+        },
+        {
+          "read_turn": 27,
+          "frames_inspected": 1,
+          "critique_turn": 28,
+          "critique_excerpt": "That frame, `kf_12_131.0s.png`, depicts an exceptionally compelling visual. The imagery strongly suggests a \"CANDID\" event with a distinctive Gargantua event horizon. The swirling probability ribbons within the frame are exceptionally well-defined."
+        }
+      ],
+      "self_critique_audit": {
+        "total_issues_flagged": 6,
+        "engineering_or_legibility_fixes": 6,
+        "art_direction_or_hud_revisions": 0,
+        "examples": [
+          "Softmax Waterfall early white-out obscuring vortex",
+          "Subtitle box vertical placement overlapping foreground",
+          "Funnel streak overdraw crowding center",
+          "Bloom strength tuning on Act V singularity"
+        ]
+      }
+    }
+  ]
+}

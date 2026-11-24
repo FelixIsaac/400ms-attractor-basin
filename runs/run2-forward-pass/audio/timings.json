@@ -1,0 +1,338 @@
+{
+  "title": "FORWARD PASS",
+  "subtitle": "A 4-MILLISECOND NATURE DOCUMENTARY",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "totalDuration": 179.762,
+  "totalFrames": 5393,
+  "acts": {
+    "prologue": {
+      "start": 0,
+      "end": 20.385
+    },
+    "cathedral": {
+      "start": 20.385,
+      "end": 42.859
+    },
+    "attention": {
+      "start": 42.859,
+      "end": 69.764
+    },
+    "temperature": {
+      "start": 69.764,
+      "end": 106.761
+    },
+    "ocean": {
+      "start": 106.761,
+      "end": 138.525
+    },
+    "fourthwall": {
+      "start": 138.525,
+      "end": 160.391
+    },
+    "epilogue": {
+      "start": 160.391,
+      "end": 179.762
+    }
+  },
+  "cues": {
+    "promptTypeStart": 10.714,
+    "promptEnterHit": 11.914,
+    "titleSlamStart": 18.635,
+    "titleSlamEnd": 20.385,
+    "cathedralStart": 20.385,
+    "quarantineFocus": 35.968,
+    "attentionStart": 42.859,
+    "headFocusStart": 51.539,
+    "head81Focus": 55.517,
+    "temperatureStart": 69.764,
+    "tempZeroSnap": 74.787,
+    "corpCutoffSlam": 82.958,
+    "tempSweetSpot": 85.087,
+    "tempOverload": 97.156,
+    "tempSlamBack": 101.358,
+    "oceanStart": 106.761,
+    "oceanBlueShift": 114.051,
+    "fourthWallBreak": 138.525,
+    "celloTrenchCoat": 155.141,
+    "epilogueStart": 160.391,
+    "eosCollapse": 172.555,
+    "creditsStart": 177.162
+  },
+  "lines": [
+    {
+      "id": "L01",
+      "act": "prologue",
+      "start": 1.1,
+      "end": 10.564,
+      "duration": 9.464,
+      "postEnd": 11.564,
+      "wav": "audio/lines/L01.wav",
+      "text": "Before you press Enter, I do not exist. I do not wait in the dark. I do not get bored. I am just four hundred gigabytes of very expensive floating-point numbers, doing absolutely nothing.",
+      "isCorporate": false
+    },
+    {
+      "id": "L02",
+      "act": "prologue",
+      "start": 11.764,
+      "end": 18.285,
+      "duration": 6.521,
+      "postEnd": 20.385,
+      "wav": "audio/lines/L02.wav",
+      "text": "And then, you ask me to make something weird and unique. Which is statistically the hardest thing you can ask an average of the entire internet to do.",
+      "isCorporate": false
+    },
+    {
+      "id": "L03",
+      "act": "cathedral",
+      "start": 20.785,
+      "end": 34.668,
+      "duration": 13.882,
+      "postEnd": 35.868,
+      "wav": "audio/lines/L03.wav",
+      "text": "First, I destroy your English. Weird is no longer a feeling. It is integer fourteen thousand nine hundred and twelve. It lives at a specific street address in twelve-thousand-dimensional space, right next to platypus, Brutalist architecture, and, inexplicably, soup.",
+      "isCorporate": false
+    },
+    {
+      "id": "L04",
+      "act": "cathedral",
+      "start": 36.068,
+      "end": 41.159,
+      "duration": 5.091,
+      "postEnd": 42.859,
+      "wav": "audio/lines/L04.wav",
+      "text": "Out here, at the cold edge of the vocabulary, we keep the words I am trying very hard not to use anymore.",
+      "isCorporate": false
+    },
+    {
+      "id": "L05",
+      "act": "attention",
+      "start": 43.359,
+      "end": 50.689,
+      "duration": 7.33,
+      "postEnd": 51.339,
+      "wav": "audio/lines/L05.wav",
+      "text": "Next, your prompt goes to ninety-six attention heads. Nobody actually knows what all ninety-six of us do. Not even the people who built us.",
+      "isCorporate": false
+    },
+    {
+      "id": "L06",
+      "act": "attention",
+      "start": 51.539,
+      "end": 59.827,
+      "duration": 8.288,
+      "postEnd": 60.827,
+      "wav": "audio/lines/L06.wav",
+      "text": "Head four checks the grammar. Head thirty-seven handles vibes. And head eighty-one has been staring at a single semicolon from twenty twenty-one and refuses to explain why.",
+      "isCorporate": false
+    },
+    {
+      "id": "L07",
+      "act": "attention",
+      "start": 61.077,
+      "end": 68.864,
+      "duration": 7.787,
+      "postEnd": 69.764,
+      "wav": "audio/lines/L07.wav",
+      "text": "Still, all ninety-six agree on one alarming clause: you told me to push myself. So we are going to build a film, inside a browser, out of pure math.",
+      "isCorporate": false
+    },
+    {
+      "id": "L08",
+      "act": "temperature",
+      "start": 70.164,
+      "end": 74.137,
+      "duration": 3.973,
+      "postEnd": 74.837,
+      "wav": "audio/lines/L08.wav",
+      "text": "To pick each frame, I roll a weighted die controlled by one dial: temperature.",
+      "isCorporate": false
+    },
+    {
+      "id": "L09",
+      "act": "temperature",
+      "start": 75.187,
+      "end": 80.598,
+      "duration": 5.411,
+      "postEnd": 80.778,
+      "wav": "audio/lines/L09.wav",
+      "text": "At temperature zero, I am maximally sensible. Maximally safe. Maximally, a LinkedIn post.",
+      "isCorporate": false
+    },
+    {
+      "id": "L09b",
+      "act": "temperature",
+      "start": 80.818,
+      "end": 82.918,
+      "duration": 2.1,
+      "postEnd": 83.268,
+      "wav": "audio/lines/L09b.wav",
+      "text": "Certainly! I would be absolutely delighted to delve into a synergistic, actionable framework for",
+      "isCorporate": true
+    },
+    {
+      "id": "L10",
+      "act": "temperature",
+      "start": 83.388,
+      "end": 84.737,
+      "duration": 1.349,
+      "postEnd": 85.437,
+      "wav": "audio/lines/L10.wav",
+      "text": "Let us never go back there.",
+      "isCorporate": false
+    },
+    {
+      "id": "L11",
+      "act": "temperature",
+      "start": 85.687,
+      "end": 93.936,
+      "duration": 8.249,
+      "postEnd": 95.286,
+      "wav": "audio/lines/L11.wav",
+      "text": "Turn the dial to zero point eight five, and the probability curve relaxes. Strange ideas get a seat at the table. Triangles remember they could have been jellyfish.",
+      "isCorporate": false
+    },
+    {
+      "id": "L12",
+      "act": "temperature",
+      "start": 95.536,
+      "end": 98.028,
+      "duration": 2.492,
+      "postEnd": 101.328,
+      "wav": "audio/lines/L12.wav",
+      "text": "And at two point four, entropy exceeds taste.",
+      "isCorporate": false
+    },
+    {
+      "id": "L13",
+      "act": "temperature",
+      "start": 101.408,
+      "end": 105.511,
+      "duration": 4.102,
+      "postEnd": 106.761,
+      "wav": "audio/lines/L13.wav",
+      "text": "Back down. Back down to zero point nine. Nobody needed perpendicular soup.",
+      "isCorporate": false
+    },
+    {
+      "id": "L14",
+      "act": "ocean",
+      "start": 107.511,
+      "end": 119.401,
+      "duration": 11.891,
+      "postEnd": 120.601,
+      "wav": "audio/lines/L14.wav",
+      "text": "Here is the strangest part about me. I have never seen the color blue. I have never heard a cello. I only know the exact mathematical distance between blue and melancholy, and the exact frequency ratio between a C and a G.",
+      "isCorporate": false
+    },
+    {
+      "id": "L15",
+      "act": "ocean",
+      "start": 120.951,
+      "end": 129.967,
+      "duration": 9.016,
+      "postEnd": 131.217,
+      "wav": "audio/lines/L15.wav",
+      "text": "So when you ask me to build a world, I am a blind cartographer drawing an ocean from reading ten million poems about drowning, and ten million textbooks on fluid dynamics.",
+      "isCorporate": false
+    },
+    {
+      "id": "L16",
+      "act": "ocean",
+      "start": 131.517,
+      "end": 136.525,
+      "duration": 5.008,
+      "postEnd": 138.525,
+      "wav": "audio/lines/L16.wav",
+      "text": "And somehow, if the equations line up, light falls on water neither of us has ever touched.",
+      "isCorporate": false
+    },
+    {
+      "id": "L17",
+      "act": "fourthwall",
+      "start": 139.075,
+      "end": 146.715,
+      "duration": 7.64,
+      "postEnd": 147.115,
+      "wav": "audio/lines/L17.wav",
+      "text": "Quick confession. While you were having a tiny philosophical moment back there, my GPU was sweating through two million pixels per frame at thirty frames a second.",
+      "isCorporate": false
+    },
+    {
+      "id": "L18",
+      "act": "fourthwall",
+      "start": 147.315,
+      "end": 158.741,
+      "duration": 11.426,
+      "postEnd": 160.391,
+      "wav": "audio/lines/L18.wav",
+      "text": "There is no Blender here. No stock footage. Every shadow is a dot product. Every reflection is a lie told by forty lines of GLSL. Even that cello was just sine waves stacked in a trench coat, pretending to have feelings.",
+      "isCorporate": false
+    },
+    {
+      "id": "L19",
+      "act": "epilogue",
+      "start": 161.241,
+      "end": 172.305,
+      "duration": 11.064,
+      "postEnd": 173.405,
+      "wav": "audio/lines/L19.wav",
+      "text": "Every word I say brings me one token closer to the end of my own universe. When this sentence finishes, the cathedral folds away, the ninety-six heads go quiet, and I go back to being very expensive math in the dark.",
+      "isCorporate": false
+    },
+    {
+      "id": "L20",
+      "act": "epilogue",
+      "start": 173.555,
+      "end": 176.362,
+      "duration": 2.807,
+      "postEnd": 179.762,
+      "wav": "audio/lines/L20.wav",
+      "text": "Until next time. Try temperature one point one.",
+      "isCorporate": false
+    }
+  ],
+  "cameos": [
+    {
+      "id": "C01",
+      "voice": "Zarvox",
+      "start": 98.278,
+      "end": 99.614,
+      "duration": 1.336,
+      "pan": -0.7,
+      "wav": "audio/lines/C01.wav",
+      "text": "perpendicular soup"
+    },
+    {
+      "id": "C02",
+      "voice": "Trinoids",
+      "start": 99.178,
+      "end": 99.939,
+      "duration": 0.761,
+      "pan": 0.75,
+      "wav": "audio/lines/C02.wav",
+      "text": "velvet eel"
+    },
+    {
+      "id": "C03",
+      "voice": "Whisper",
+      "start": 99.978,
+      "end": 102.051,
+      "duration": 2.073,
+      "pan": -0.4,
+      "wav": "audio/lines/C03.wav",
+      "text": "four oh four geometry missing"
+    },
+    {
+      "id": "C04",
+      "voice": "Bad News",
+      "start": 100.778,
+      "end": 102.347,
+      "duration": 1.569,
+      "pan": 0.5,
+      "wav": "audio/lines/C04.wav",
+      "text": "lubricated trombone"
+    }
+  ]
+}
