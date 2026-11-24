@@ -167,6 +167,13 @@ def main() -> None:
             f"  TOTAL: {tot_out:,} output tokens | concept lock share={100.0*tot_concept/tot_out:.2f}% | "
             f"alternatives brainstormed={tot_alts} | self-critique={tot_eng} eng vs {tot_art} art"
         )
+        prov = data.get("evaluator_provenance")
+        if prov:
+            print("\n" + "-" * 78)
+            print("EVALUATOR PROVENANCE & BIAS DISCLOSURE")
+            print("-" * 78)
+            print(f"  Analyst: {prov['analyst_model']} (same_family_as_subjects={prov['same_family_as_subjects']})")
+            print(f"  Note:    {prov['known_bias']}")
 
 
 if __name__ == "__main__":

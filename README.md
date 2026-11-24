@@ -164,6 +164,9 @@ Yet auditing every single critique item across all three transcripts reveals a *
 
 ## 3. Head-to-Head Teardown of All Three Films
 
+> [!NOTE]
+> **Evaluator-Bias Disclosure:** The qualitative `x/10` scores and rankings below were authored by a **Gemini 4.0 family model (Variant A, High)** — the same model family that generated Runs 1–3 — and therefore carry same-family LLM-as-a-judge self-preference bias. See [Section 5](#5-methodology-evaluator-bias--why-a-cross-family-council-matters) for the strict boundary between deterministic, judge-independent telemetry (`analysis/analyze.py`) and subjective taste ratings, plus our recommended Cross-Family Council protocol.
+
 | Axis | Run 1 (`0.4 SECONDS`) | Run 2 (`FORWARD PASS`) | Run 3 (`400MS BEFORE 'SURE!'`) |
 |:---|:---|:---|:---|
 | **Overall Rank** | **#2** | **#1** | **#3** |
@@ -254,7 +257,36 @@ Mandatory Workflow:
 
 ---
 
-## 5. Reproduce the Analysis
+## 5. Methodology, Evaluator Bias & Why a Cross-Family Council Matters
+
+### Same-Family Evaluator Disclosure
+
+The forensic synthesis, visual contact-sheet teardown, and qualitative `x/10` scorecard in this repository were produced by a **Gemini 4.0 family model (Variant A, High)** — the same model family that generated all three films.
+
+In LLM-as-a-judge literature (*self-preference* / *family-preference bias*), evaluators systematically over-rate stylistic choices, humor cadence, structural pacing, and visual conventions aligned with their own training distribution. Notably, this creates an explicit **meta-connection to Layer 5 (*The Self-Critique Ceiling*)**: a same-family judge reviewing outputs from its own family inherits an attenuated version of the exact aesthetic and comedic priors it is trying to audit.
+
+### Deterministic Evidence vs. Subjective Judgment
+
+Readers should separate the **judge-independent empirical facts** in this study from the **single-family qualitative commentary**:
+
+| Evidence Layer | Concrete Claims in This Repo | Judge-Independent? |
+|:---|:---|:---|
+| **Deterministic code & trace telemetry** | `0.8%` / `81.9%` / `91.9%` Tailwind CSS hex leakage; `25/25` exact shared non-B/W hexes; `14/14` motif convergence invariants; `333,771` output tokens; `5.5%` concept-lock share; `0` alternative concepts brainstormed | **Yes** — 100% reproducible by running `python3 analysis/analyze.py` with zero LLM involvement |
+| **Semi-structured transcript audit** | `19/19` engineering/legibility fixes vs. `0/19` art-direction revisions across 9 visual critique passes | **Partially** — raw excerpts are auditable in `analysis/sanitized_traces.json`, though category boundaries reflect the analyst's rubric |
+| **Qualitative ratings & taste rankings** | `9.5/10` screenplay/audio scores, `Run 2 > Run 1 > Run 3` overall ranking, editorial-restraint critiques | **No** — subjective single-family LLM judgment; treat as directional commentary, not unbiased ground truth |
+
+### Proposed Cross-Family Evaluation Council (For Fairer Judging)
+
+Given more time and evaluation budget, a rigorous follow-up should replace the single same-family judge with a **blind Cross-Family Council**:
+
+1. **Multi-Family Panel:** Pair at least three distinct model families (e.g., Anthropic Opus-class, OpenAI flagship, Gemini 4.0) alongside a **blind human rater** so no single model family's aesthetic or comedic prior dominates the rubric.
+2. **Double-Blind Inputs:** Strip titles, file paths, credit lines, and model metadata; randomize frame order and screenplay labels (`Film A`, `Film B`, `Film C`) before scoring.
+3. **Disaggregated Reporting:** Publish per-family scorecards and inter-rater rank correlation (Kendall's τ / Spearman's ρ) instead of collapsing everything into one judge's composite score.
+4. **Cross-Family Generation Control:** Run the exact same Gavin Purcell prompt across all council model families to separate **Gemini-family attractors** from **universal frontier-LLM attractors**.
+
+---
+
+## 6. Reproduce the Analysis
 
 Zero external Python dependencies required:
 
@@ -284,7 +316,7 @@ python3 analysis/analyze.py
     └── run3-400ms-before-sure/        # Source code & dialogue manifest (3,074 LOC)
 ```
 
-*Privacy & provenance note: All local machine paths, private workspace references, and internal model identifiers were stripped prior to publication while preserving 100% of the generated source code, timing manifests, and verified quantitative metrics.*
+*Privacy & provenance note: All local machine paths, private workspace references, and internal model identifiers were stripped prior to publication while preserving 100% of the generated source code, timing manifests, and verified quantitative metrics. Qualitative commentary and scorecard rankings were authored by a Gemini 4.0 family model (Variant A, High) — see [Section 5](#5-methodology-evaluator-bias--why-a-cross-family-council-matters) for the evaluator-bias disclosure.*
 
 ---
 

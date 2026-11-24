@@ -1,6 +1,12 @@
 {
   "experiment": "400ms-attractor-basin",
   "prompt_inspiration": "https://x.com/gavinpurcell/status/2124986121532965305",
+  "evaluator_provenance": {
+    "analyst_model": "Gemini 4.0 Family — Variant A (High)",
+    "same_family_as_subjects": true,
+    "known_bias": "Same-family LLM-as-a-judge self-preference bias applies to qualitative rankings and taste scores; code/hex/token metrics in analyze.py are deterministic and judge-independent.",
+    "recommended_next_step": "Blind cross-family LLM council (Anthropic + OpenAI + Gemini + human rater) with anonymized frames and scripts."
+  },
   "runs": [
     {
       "id": "run1",
